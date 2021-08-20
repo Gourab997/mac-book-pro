@@ -70,8 +70,8 @@ function promoCode() {
     let checkOut = document.getElementById('check-outValue')
     let checkOutValue = parseInt(checkOut.innerText)
 
-    let promoUse = 0
-    if (promoText = "stevekaku") {
+
+    if (promoText == "stevekaku") {
         promoUse = checkOutValue * 0.2
         checkOut.innerText = checkOutValue - promoUse
         promoInput.value = " "
