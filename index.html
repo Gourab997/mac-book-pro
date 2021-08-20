@@ -26,24 +26,26 @@
                     16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse
                     Magic Keyboard - US English
                 </p>
+
+                <!-- memory  -->
                 <div class="my-5">
                     <h6 class="">Memory</h6>
-                    <button class="btn btn-outline-dark">8GB unified memory</button>
-                    <button class="btn btn-outline-dark">16GB unified memory</button>
+                    <button id="8GB-Memory" class="btn btn-outline-dark">8GB unified memory</button>
+                    <button id="16GB-Memory" class="btn btn-outline-dark">16GB unified memory</button>
                 </div>
 
                 <div class="my-5">
                     <h6 class="">Storage</h6>
-                    <button class="btn btn-outline-dark">256GB SSD storage</button>
-                    <button class="btn btn-outline-dark">512GB SSD storage</button>
-                    <button class="btn btn-outline-dark">1TB SSD storage</button>
+                    <button id="256GB-storage" class="btn btn-outline-dark">256GB SSD storage</button>
+                    <button id="512GB-storage" class="btn btn-outline-dark">512GB SSD storage</button>
+                    <button id="1TB-storage" class="btn btn-outline-dark">1TB SSD storage</button>
                 </div>
 
 
                 <div class="my-5">
                     <h6 class="">Choose your delivery option </h6>
-                    <button class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button class="btn btn-outline-dark">Friday, Aug 21 Delivery Charge $20</button>
+                    <button id="free" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="charge" class="btn btn-outline-dark">Friday, Aug 21 Delivery Charge $20</button>
                 </div>
 
 
@@ -54,25 +56,25 @@
                             <tr>
 
                                 <td class="fw-bold">Best Price</td>
-                                <td class="fw-bold">$1299</td>
+                                <td class="fw-bold">$ <span id="best-cost"> 1299</span></td>
 
                             </tr>
                             <tr>
 
                                 <td class="fw-bold">Extra Memory Cost</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="memory-cost">0</span></td>
 
                             </tr>
                             <tr>
 
                                 <td class="fw-bold">Extra Storage Cost</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="storage-cost">0</span></td>
 
                             </tr>
                             <tr>
 
                                 <td class="fw-bold">Delivery charge</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="delivery-cost">0</span></td>
 
                             </tr>
                         </tbody>
@@ -80,16 +82,16 @@
                         <tr>
 
                             <th scope="col">Total Price</th>
-                            <th scope="col">$1299</th>
+                            <th scope="col">$<span id="total-price">1299</span></th>
 
                         </tr>
 
                     </table>
-                    <h6>Add Pomo code</h6>
+                    <h6>Add Promo code</h6>
                     <div class="d-flex">
-                        
-                        <input class="form-control" type="text">
-                        <button class="btn btn-danger">Apply</button>
+
+                        <input id="promo-code" class="form-control" type="text">
+                        <button id="promo-apply" class="btn btn-danger">Apply</button>
                     </div>
 
                 </div>
@@ -98,23 +100,11 @@
         </div>
         <div class="container">
             <hr>
-            <h1 class="text-center">Total: $1299</h1>
+            <h1 class="text-center">Total: $ <span id="check-outValue">1299 </span> </h1>
         </div>
-       
+
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="./js/app.js"></script>
 
     <!-- bootstrap js -->
