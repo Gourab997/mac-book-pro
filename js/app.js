@@ -1,33 +1,30 @@
 
 function productPrice(product, option) {
     const productCostText = document.getElementById(product + '-cost')
-    let memoryPrice = 0;
-    let storagePrice = 0;
-    let deliveryCharge = 0;
     if (product == "memory") {
         if (option == 8) {
+            productCostText.innerText = 0
+        }
+        else if (option == 16) {
 
-            memoryPrice = productCostText.innerText = 0
-        } else if (option == 16) {
-            memoryPrice = 0
-            memoryPrice = productCostText.innerText = 180
+            productCostText.innerText = 180
         }
     } else if (product == "storage") {
         if (option == 256) {
-            storagePrice = productCostText.innerText = 0
+            productCostText.innerText = 0
         } else if (option == 512) {
-            storagePrice = productCostText.innerText = 100
+            productCostText.innerText = 100
         } else if (option == 1) {
-            storagePrice = productCostText.innerText = 180
+            productCostText.innerText = 180
         }
 
     } else if (product == "delivery") {
 
         if (option == 'free') {
-            deliveryCharge = productCostText.innerText = 0
+            productCostText.innerText = 0
         }
         else if (option == "charge") {
-            deliveryCharge = productCostText.innerText = 20
+            productCostText.innerText = 20
         }
     }
 
