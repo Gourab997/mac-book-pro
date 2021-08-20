@@ -1,3 +1,4 @@
+
 function productPrice(product, option) {
     const productCostText = document.getElementById(product + '-cost')
     let memoryPrice = 0;
@@ -35,7 +36,7 @@ function productPrice(product, option) {
 
 }
 
-
+//getting product price
 function getPrice(product) {
     const productPrice = document.getElementById(product + '-cost')
 
@@ -46,7 +47,7 @@ function getPrice(product) {
 }
 
 
-
+// total price calculation
 function totalCalculation() {
     const totalValueText = document.getElementById('total-price')
     const checkOut = document.getElementById('check-outValue')
@@ -61,6 +62,7 @@ function totalCalculation() {
     checkOut.innerText = calculatedValue
 }
 
+// Using Promo Code
 function promoCode() {
     let promoInput = document.getElementById("promo-code")
     let promoText = promoInput.value
