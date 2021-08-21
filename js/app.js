@@ -65,18 +65,20 @@ function promoCode() {
     let promoText = promoInput.value
 
     let checkOut = document.getElementById('check-outValue')
-    let checkOutValue = parseInt(checkOut.innerText)
-
+    const totalValueText = document.getElementById('total-price')
+    let totalValue = parseInt(totalValueText.innerText)
+    let buttonPromo = document.getElementById('promo-apply')
 
     if (promoText == "stevekaku") {
-        promoUse = checkOutValue * 0.2
-        checkOut.innerText = checkOutValue - promoUse
+        promoUse = totalValue * 0.2
+        checkOut.innerText = totalValue - promoUse
         promoInput.value = " "
+        buttonPromo.disabled = true
     }
 }
 
 
-
+//Eventhandeler
 document.getElementById('8GB-Memory').addEventListener('click', function () {
     productPrice('memory', 8)
 })
